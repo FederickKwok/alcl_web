@@ -35,7 +35,7 @@ class _ToggleScaffoldState extends State<ToggleScaffold> {
               title: Container(
                 width: 200,
                 padding: EdgeInsets.fromLTRB(50.0, 0.0, 0.0, 0.0),
-                child: Image.asset('assets/maersk_logo.png'),
+                child: Image.asset('assets/images/maersk_logo.png'),
               ),
               centerTitle: false,
               iconTheme: const IconThemeData(color: Colors.blue),
@@ -51,7 +51,7 @@ class _ToggleScaffoldState extends State<ToggleScaffold> {
               title: Container(
                 width: 150,
                 padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-                child: Image.asset('assets/maersk_logo.png'),
+                child: Image.asset('assets/images/maersk_logo.png'),
               ),
               centerTitle: false,
               iconTheme: const IconThemeData(color: Colors.blue),
@@ -61,16 +61,47 @@ class _ToggleScaffoldState extends State<ToggleScaffold> {
                   padding: EdgeInsets.zero,
                   children: const <Widget>[
                     DrawerHeader(
-                      child: Text('Drawer Header'),
+                      child: Text(
+                        'Drawer Header',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontFamily: 'Maersk Headline',
+                        ),
+                      ),
                       decoration: BoxDecoration(
                         color: Colors.blue,
                       ),
                     ),
                     ListTile(
-                      title: Text('Item 1'),
+                      title: Text(
+                          'About Us',
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontFamily: 'Maersk Text',
+                            fontSize: 16,
+                          ),
+                      ),
                     ),
                     ListTile(
-                      title: Text('Item 2'),
+                      title: Text(
+                          'Dashboard',
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontSize: 16,
+                            fontFamily: 'Maersk Text',
+                          ),
+                      ),
+                    ),
+                    ListTile(
+                      title: Text(
+                        'Developer',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontFamily: 'Maersk Text',
+                          fontSize: 16,
+                        ),
+                      ),
                     ),
                   ]
               ),
@@ -90,6 +121,7 @@ class _ToggleScaffoldState extends State<ToggleScaffold> {
           style: TextStyle(
             color: Colors.blue,
             fontSize: 16,
+            fontFamily: 'Maersk Text',
           ),
         ),
       ),
@@ -100,6 +132,7 @@ class _ToggleScaffoldState extends State<ToggleScaffold> {
           style: TextStyle(
             color: Colors.blue,
             fontSize: 16,
+            fontFamily: 'Maersk Text',
           ),
         ),
       ),
@@ -110,6 +143,7 @@ class _ToggleScaffoldState extends State<ToggleScaffold> {
           style: TextStyle(
             color: Colors.blue,
             fontSize: 16,
+            fontFamily: 'Maersk Text',
           ),
         ),
       ),

@@ -63,7 +63,7 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   assets:
-    - assets/maersk_logo.png
+    - assets/images/maersk_logo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -90,3 +90,29 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: Maersk Headline
+      fonts:
+        - asset: assets/fonts/MaerskHeadline-Light.ttf
+        - asset: assets/fonts/MaerskHeadline-Lightitalic.ttf
+        - asset: assets/fonts/MaerskHeadline-Regular.ttf
+        - asset: assets/fonts/MaerskHeadline-Italic.ttf
+          style: italic
+        - asset: assets/fonts/MaerskHeadline-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/MaerskHeadline-Bolditalic.ttf
+          style: italic
+          weight: 700
+    - family: Maersk Text
+      fonts:
+        - asset: assets/fonts/MaerskText-Light.ttf
+        - asset: assets/fonts/MaerskText-LightItalic.ttf
+        - asset: assets/fonts/MaerskText-Regular.ttf
+        - asset: assets/fonts/MaerskText-Italic.ttf
+          style: italic
+        - asset: assets/fonts/MaerskText-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/MaerskText-BoldItalic.ttf
+          style: italic
+          weight: 700
+
