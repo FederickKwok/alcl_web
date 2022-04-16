@@ -26,7 +26,7 @@ class SplashPage extends StatelessWidget {
       'new ways to connect and make it simpler to do business with Maersk. '
       'The New SCM Platform is going to be a milestone proof point in our '
       'global integrator story, and one that is going to unlock a lot of '
-      'growth - Martin Holme, Global Head of Lead Logistics',
+      'growth - Martin Holme, Global Head of Lead Logistics.',
       softWrap: true,
       style: TextStyle(
           color: Colors.white,

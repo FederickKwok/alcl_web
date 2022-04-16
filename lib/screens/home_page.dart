@@ -83,7 +83,6 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: [
               SplashPage(screenSize: screenSize),
-              //HubCards(screenSize: screenSize),
             ],
           ),
         ),
