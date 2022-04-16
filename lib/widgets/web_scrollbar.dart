@@ -48,9 +48,13 @@ class _WebScrollbarState extends State<WebScrollbar> {
     var screenSize = MediaQuery.of(context).size;
     double _scrollerHeight = screenSize.height * widget.heightFraction;
 
+    // This fixes a bug where the maxScrollExtent is 0
+    double _scrollPositionOverMaxScrollExtent = widget.controller.hasClients && widget.controller.position.maxScrollExtent > 0
+        ? (_scrollPosition / widget.controller.position.maxScrollExtent)
+        : 0;
+
     double _topMargin = widget.controller.hasClients
-        ? ((screenSize.height * _scrollPosition / widget.controller.position.maxScrollExtent) -
-          (_scrollerHeight * _scrollPosition / widget.controller.position.maxScrollExtent))
+        ? ((screenSize.height * _scrollPositionOverMaxScrollExtent) - (_scrollerHeight * _scrollPositionOverMaxScrollExtent))
         : 0;
 
     return NotificationListener<ScrollNotification>(

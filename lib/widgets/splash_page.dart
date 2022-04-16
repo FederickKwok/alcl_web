@@ -51,22 +51,20 @@ class SplashPage extends StatelessWidget {
             height: 400,
             padding: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
             color: HexColor("#00243D"),
-            child: Expanded(
-              child: Column(
-                children: [
-                  Container(
-                    padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 20.0),
-                    alignment: Alignment.topLeft,
-                    child: splashTitle(),
-                  ),
-                  Expanded(
-                    child: splashBodyText()
-                  ),
-                  Expanded(
-                    child: splashImage()
-                  ),
-                ],
-              ),
+            child: Column(
+              children: [
+                Container(
+                  padding: EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 20.0),
+                  alignment: Alignment.topLeft,
+                  child: splashTitle(),
+                ),
+                Expanded(
+                  child: splashBodyText()
+                ),
+                Expanded(
+                  child: splashImage()
+                ),
+              ],
             ),
           )
         : Container(

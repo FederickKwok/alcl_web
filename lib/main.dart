@@ -1,14 +1,16 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:easy_dynamic_theme/easy_dynamic_theme.dart';
 import 'package:alcl_web/utils/theme_data.dart';
-import 'package:alcl_web/screens/home_page.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+
+import 'screens/home_page.dart';
 
 void main() {
   debugPaintSizeEnabled = false;
   runApp(
     EasyDynamicThemeWidget(
       child: AlclWeb(),
+      initialThemeMode: ThemeMode.light,
     ),
   );
 }

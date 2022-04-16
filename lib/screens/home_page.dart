@@ -1,12 +1,10 @@
-import 'package:flutter/material.dart';
 import 'package:easy_dynamic_theme/easy_dynamic_theme.dart';
-
 import 'package:alcl_web/widgets/responsive.dart';
 import 'package:alcl_web/widgets/top_bar_contents.dart';
 import 'package:alcl_web/widgets/alcl_drawer.dart';
 import 'package:alcl_web/widgets/web_scrollbar.dart';
 import 'package:alcl_web/widgets/splash_page.dart';
-import 'package:alcl_web/widgets/hub_cards.dart';
+import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -32,6 +30,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     _scrollController = ScrollController();
     _scrollController.addListener(_scrollListener);
+
     super.initState();
   }
 
