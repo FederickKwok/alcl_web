@@ -22,16 +22,11 @@ class SplashPage extends StatelessWidget {
 
   Text splashBodyText() {
     return const Text(
-      'Our customers look to us for innovative, industry-leading solutions, '
-      'new ways to connect and make it simpler to do business with Maersk. '
-      'The New SCM Platform is going to be a milestone proof point in our '
-      'global integrator story, and one that is going to unlock a lot of '
-      'growth - Martin Holme, Global Head of Lead Logistics.',
-      softWrap: true,
+      'Our customers look to us for innovative, industry-leading solutions, new ways to connect and make it simpler to do business with Maersk. The New SCM Platform is going to be a milestone proof point in our global integrator story, and one that is going to unlock a lot of growth - Martin Holme, Global Head of Lead Logistics.',
       style: TextStyle(
-          color: Colors.white,
-          fontSize: 16,
-          fontFamily: 'Maersk Text'
+        color: Colors.white,
+        fontSize: 16,
+        fontFamily: 'Maersk Text',
       ),
     );
   }
@@ -40,7 +35,7 @@ class SplashPage extends StatelessWidget {
     return SizedBox(
       height: 673,
       width: 475,
-      child: SvgPicture.asset("assets/images/Air_and_LCL_Splash_clean.svg"),
+      child: SvgPicture.asset("images/Air_and_LCL_Splash_clean.svg"),
     );
   }
 
@@ -69,26 +64,51 @@ class SplashPage extends StatelessWidget {
           )
         : Container(
             height: 400,
-            padding: EdgeInsets.fromLTRB(100.0, 50.0, 100.0, 50.0),
             color: HexColor("#00243D"),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Expanded(
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        padding: EdgeInsets.fromLTRB(0.0, 70.0, 0.0, 10.0),
-                        alignment: Alignment.topLeft,
-                        child: splashTitle()
+                        padding: EdgeInsets.fromLTRB(100, 20, 50, 20),
+                        child: const Text(
+                          'Welcome to Air & LCL Platform',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 40,
+                              fontFamily: 'Maersk Headline'
+                          ),
+                        ),
                       ),
-                      Expanded(
-                        child: splashBodyText()
-                      ),
+                      Container(
+                        padding: EdgeInsets.fromLTRB(100, 20, 50, 20),
+                        child: RichText(
+                          maxLines: 5,
+                          softWrap: true,
+                          text: const TextSpan(
+                            text: 'Our customers look to us for innovative, industry-leading solutions, new ways to connect and make it simpler to do business with Maersk. The New SCM Platform is going to be a milestone proof point in our global integrator story, and one that is going to unlock a lot of growth - Martin Holme, Global Head of Lead Logistics. Our customers look to us for innovative, industry-leading solutions, new ways to connect and make it simpler to do business with Maersk. The New SCM Platform is going to be a milestone proof point in our global integrator story, and one that is going to unlock a lot of growth - Martin Holme, Global Head of Lead Logistics. Our customers look to us for innovative, industry-leading solutions, new ways to connect and make it simpler to do business with Maersk. The New SCM Platform is going to be a milestone proof point in our global integrator story, and one that is going to unlock a lot of growth - Martin Holme, Global Head of Lead Logistics. Our customers look to us for innovative, industry-leading solutions, new ways to connect and make it simpler to do business with Maersk. The New SCM Platform is going to be a milestone proof point in our global integrator story, and one that is going to unlock a lot of growth - Martin Holme, Global Head of Lead Logistics.',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 16,
+                              fontFamily: 'Maersk Text',
+                            ),
+                          ),
+                        ),
+                      )
                     ],
                   ),
                 ),
-                Expanded(
-                  child: splashImage()
+                Flexible(
+                  fit: FlexFit.tight,
+                  flex: 1,
+                  child: Container(
+                    padding: EdgeInsets.fromLTRB(50, 20, 100, 20),
+                    child: SvgPicture.asset('images/Air_and_LCL_Splash_clean.svg'),
+                  ),
                 ),
               ],
             ),

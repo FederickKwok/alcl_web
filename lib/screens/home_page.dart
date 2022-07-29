@@ -1,3 +1,4 @@
+import 'package:alcl_web/widgets/card_section.dart';
 import 'package:easy_dynamic_theme/easy_dynamic_theme.dart';
 import 'package:alcl_web/widgets/responsive.dart';
 import 'package:alcl_web/widgets/top_bar_contents.dart';
@@ -83,6 +84,7 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             children: [
               SplashPage(screenSize: screenSize),
+              //CardSection(),
             ],
           ),
         ),
